@@ -1,2 +1,24 @@
 # TADS - RIO GRANDE
 # Desenvolvimento de Aplicativos 6o Semestre
+
+
+## REACT NATIVE 
+https://reactnative.dev/
+https://reactnative.dev/docs/environment-setup
+
+
+## EXPO
+https://expo.dev/
+
+INSTALAR APP DO EXPO PARA TESTAR NO SEU DISPOSITIVO
+https://expo.dev/client
+
+
+## STEPS:
+```
+npx create-expo-app TopicosApp
+cd TopicosApp
+yarn android
+yarn ios
+yarn web
+```
