@@ -22,3 +22,11 @@ yarn android
 yarn ios
 yarn web
 ```
+
+# EXTRA
+
+## CodePush
+    Permite a adição e injeção de código JS no seu APP sem precisar passar por uma atualização via LOJA.
+
+## CSS TRICKS
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
