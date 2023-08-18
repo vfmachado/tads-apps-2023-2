@@ -58,5 +58,9 @@ const styles = StyleSheet.create({
     height: '50px',
     borderWidth: '4px',
     borderColor: 'red',
+  },
+  button: {
+    width: '100%',
+    minHeight: '100%',
   }
 });
