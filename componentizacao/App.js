@@ -4,12 +4,15 @@ import Card from './src/components/Card';
 import Button from './src/components/Button';
 import { useState } from 'react';
 import InitialScreen from './src/screens/Initial';
+import CounterContext, { CounterProvider } from './src/contexts/CounterContext';
+import CounterScreen from './src/screens/Counters';
 
 export default function App() {
 
   const [activeScreen, setActiveScreen] = useState('INITIAL')
 
   return (
+    <CounterProvider>
     <View style={styles.container}>
 
       {activeScreen === 'INITIAL' && 
@@ -45,6 +48,7 @@ export default function App() {
 
       {activeScreen === 'THIRD' &&
       <View>
+        <CounterScreen />
         <Button
           title="Voltar"
           onPress={() => setActiveScreen('INITIAL')}
@@ -53,6 +57,7 @@ export default function App() {
       }
 
     </View>
+    </CounterProvider>
   );
 }
 
