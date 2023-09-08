@@ -1,6 +1,10 @@
 # TADS - RIO GRANDE
 # Desenvolvimento de Aplicativos 6o Semestre
 
+## TRABALHOS
+
+1. QUIZ APP - Apresentações no dia 15/09
+
 
 ## REACT NATIVE 
 https://reactnative.dev/
