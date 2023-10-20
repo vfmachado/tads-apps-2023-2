@@ -1,0 +1,8 @@
+Documentação
+https://reactnavigation.org/docs/stack-navigator/
+
+npm install @react-navigation/stack
+npx expo install react-native-gesture-handler
+
+// on App.js
+import 'react-native-gesture-handler';
