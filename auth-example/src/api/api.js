@@ -2,7 +2,7 @@
 import axios from 'axios'
 
 const api = axios.create({
-    baseUrl: 'http://localhost:3000'
+    baseURL: 'https://tads-apps-simle-api.onrender.com'
 });
 
 api.interceptors.request.use(

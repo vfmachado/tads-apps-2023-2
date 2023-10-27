@@ -8,16 +8,25 @@ const AuthProvider = ({ children }) => {
     const [isLogged, setIsLogged] = useState(false);
     const [user, setUser] = useState(null);
 
-    const signIn = async (email) => {
+    const signIn = async (email, password) => {
         setUser({ email });
-        api.defaults.headers.authorization = `Bearer ${email}`;
+        //api.defaults.headers.authorization = `Bearer ${email}`;
         
         try {
-            await api.get('/login');
+            const response = await api.post('/login', {
+                email,
+                password
+            });
+            const { user, token } = response.data;
+
+            api.defaults.headers.authorization = token;
+            setUser(user);
+            
+            setIsLogged(true);
         } catch (error) {
             console.log("ERRO AO FAZER LOGIN ")
         }
-        setIsLogged(true);
+     
     }
 
     const signOut = () => {

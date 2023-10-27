@@ -20,7 +20,7 @@ export default function Login(props) {
 
     const fazLogin = () => {
         console.log('Fazendo login com email: ' + email + ' e senha: ' + password);
-        signIn(email);
+        signIn(email, password);
     };
 
     return (
